@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    background-color: #3e1818;
+}
+
+.container{
+    margin-top: 250px;
+    margin-left: 275px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-image: url(https://i.pinimg.com/originals/f8/6d/28/f86d2880de2cbd5f1493462dac2ba0ad.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #000000;
+    filter: brightness(80%);
+}
+
+.header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.header img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.beloved img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    transition: transform 0.3s;
+    margin-left: 900px;
+}
+
+.beloved img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title{
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 900px;
+    color: magenta;
+    text-shadow: 0 4px 8px black;
+}
+
+h2{
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 900px;
+    color: darkred;
+    text-shadow: 0 4px 8px black;
+    padding-left: 940px;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1000px;
+    color:aqua;
+    text-shadow: 0 4px 8px black;
+}
+
+button{
+    width: 250px;
+    height: 100px;
+    margin-left: 900px;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: gold;
+    border: none;
+    font-family: cursive;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: black;
+    color: gold;
+    transition: background-color 0.3s;
+}
+
+button:active{
+    transform: translateY(2px);
+}
+
+.fandoms{
+    display: flex;
+}
+
+.moments{
+    padding-left: 200px;
+    padding-top: 200px;
+}
+
+.couples{
+    display: flex;
+}
+
+@media(max-width: 425px){
+    /* h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    button{
+        font-size: 1.2em;
+    }
+    .header{
+        padding: 10px;
+    } */
+
+    .fandoms{
+        display: block;
+    }
+
+    .fandoms img{
+        max-width: 200px;
+        height: auto;
+    }
+
+    .moments{
+        position: relative;
+        right: 1000px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .container{
+        position: relative;
+        right: 1075px;
+    }
+
+    h1{
+        white-space: nowrap;
+    }
+
+    h2{
+        white-space: nowrap;
+    }
+
+    .sweet{
+        position: relative;
+        right: 1085px;
+    }
+
+    .couples img{
+        display: block;
+        position: relative;
+        right: 590px;
+        max-width: 150px;
+        max-height: 170px;
+    }
+}
